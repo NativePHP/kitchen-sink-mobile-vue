@@ -21,11 +21,13 @@ What's NativePHP? [Read the docs](https://nativephp.com)
 
 To use this app and check out NativePHP for Mobile, follow these steps:
 
-1. Clone this repo (`git clone git@github.com:NativePHP/kitchen-sink-mobile.git`)
-2. Change directory into the cloned repo and install dependencies (`composer install && npm i && npm run build`)
-3. Run `php artisan native:install` and follow the prompts
-4. Run `php artisan native:run` and follow the prompts
-5. The app should launch on your chosen device!
+1. Clone this repo (`git clone git@github.com:NativePHP/kitchen-sink-mobile-vue.git`)
+2. Change directory into the cloned repo and install dependencies (`composer install`)
+3. Install npm dependencies (`npm install`)
+4. Build assets (`npm run build -- --mode=ios` or `npm run build -- --mode=android`)
+5. Run `php artisan native:install` and follow the prompts
+6. Run `php artisan native:run` and follow the prompts
+7. The app should launch on your chosen device!
 
 ## License
 
