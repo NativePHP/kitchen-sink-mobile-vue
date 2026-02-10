@@ -11,7 +11,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { SmartphoneIcon, ZapIcon } from 'lucide-vue-next';
 import { onMounted, ref } from 'vue';
-import { device, system } from '#nativephp';
+import { Device, System } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -26,16 +26,16 @@ const isIos = ref(false);
 const isAndroid = ref(false);
 
 const loadDeviceInfo = async () => {
-    const idResult = await device.getId();
+    const idResult = await Device.getId();
     deviceId.value = idResult.id;
 
-    const infoResult = await device.getInfo();
+    const infoResult = await Device.getInfo();
     const infoString = infoResult.info;
     deviceInfo.value = typeof infoString === 'string' ? JSON.parse(infoString) : infoString;
 };
 
 const loadBatteryInfo = async () => {
-    const result = await device.getBatteryInfo();
+    const result = await Device.getBatteryInfo();
     const infoString = result.info;
     batteryInfo.value = typeof infoString === 'string' ? JSON.parse(infoString) : infoString;
 };
@@ -45,8 +45,8 @@ onMounted(async () => {
     await loadBatteryInfo();
 
     // Load platform info
-    isIos.value = await system.isIos();
-    isAndroid.value = await system.isAndroid();
+    isIos.value = await System.isIos();
+    isAndroid.value = await System.isAndroid();
 
     // Poll battery info every 5 seconds
     setInterval(loadBatteryInfo, 5000);

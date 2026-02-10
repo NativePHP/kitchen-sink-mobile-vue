@@ -7,21 +7,20 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
-import { GlobeIcon, SquareArrowOutUpRightIcon, RectangleHorizontalIcon, ShieldCheckIcon, Sparkles } from 'lucide-vue-next';
-import { browser } from '#nativephp';
+import { GlobeIcon, SquareArrowOutUpRightIcon, RectangleHorizontalIcon, ShieldCheckIcon } from 'lucide-vue-next';
+import { Browser } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
 
 const openInApp = async () => {
-    await browser.inApp('https://nativephp.com/mobile');
+    await Browser.inApp('https://nativephp.com/mobile');
 };
 
 const openSystem = async () => {
-    await browser.open('https://nativephp.com');
+    await Browser.open('https://nativephp.com');
 };
 </script>
 

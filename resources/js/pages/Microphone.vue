@@ -25,10 +25,10 @@ import {
 } from 'lucide-vue-next';
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import {
-    microphone,
-    off,
-    on,
-    shareFile,
+    Off,
+    On,
+    ShareFile,
+    Microphone,
     Events
 } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
@@ -68,7 +68,7 @@ const fetchRecordings = async () => {
 // Get status from native
 const updateStatus = async () => {
     try {
-        const result = await microphone.getStatus();
+        const result = await Microphone.getStatus();
 
         // Map native status to our state
         // Native returns {status: 'idle'|'recording'|'paused'}
@@ -90,7 +90,7 @@ const startRecording = async () => {
     // Optimistically set state immediately for better UX
     recordingState.value = 'recording';
 
-    await microphone.record();
+    await Microphone.record();
     await updateStatus();
 
     // Start polling status while recording
@@ -106,7 +106,7 @@ const pauseRecording = async () => {
     // Optimistically set state immediately for better UX
     recordingState.value = 'paused';
 
-    await microphone.pause();
+    await Microphone.pause();
     await updateStatus();
 };
 
@@ -115,7 +115,7 @@ const resumeRecording = async () => {
     // Optimistically set state immediately for better UX
     recordingState.value = 'recording';
 
-    await microphone.resume();
+    await Microphone.resume();
     await updateStatus();
 };
 
@@ -124,7 +124,7 @@ const stopRecording = async () => {
     // Optimistically set state immediately for better UX
     recordingState.value = 'idle';
 
-    await microphone.stop();
+    await Microphone.stop();
     await updateStatus();
 
     // Stop polling when recording ends
@@ -148,7 +148,7 @@ const handleRecordingComplete = async (payload: any) => {
 // Share audio file
 const shareRecording = async (recording: Recording) => {
     if (recording.path) {
-        await shareFile(
+        await ShareFile(
             'Audio Recording',
             'Check out this recording!',
             recording.path,
@@ -189,13 +189,13 @@ const isIdle = computed(() => recordingState.value === 'idle');
 
 onMounted(async () => {
     // Listen for recording complete event
-    on(Events.Microphone.MicrophoneRecorded, handleRecordingComplete);
+    On(Events.Microphone.Recorded, handleRecordingComplete);
     await fetchRecordings();
 });
 
 onUnmounted(() => {
     // Clean up event listener
-    off(Events.Microphone.MicrophoneRecorded, handleRecordingComplete,);
+    Off(Events.Microphone.Recorded, handleRecordingComplete,);
 
     // Clear status polling interval
     if (statusInterval !== null) {

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "158318808084",
+    "project_id": "com-nativephp-kitchensink",
+    "storage_bucket": "com-nativephp-kitchensink.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158318808084:android:e777265d763d9b016f6b01",
+        "android_client_info": {
+          "package_name": "com.nativephp.kitchensinkapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwQ7uDLM1PKDjiEJH3OVV1uo9zSq-eI7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158318808084:android:537b346f1017c31d6f6b01",
+        "android_client_info": {
+          "package_name": "com.nativephp.kitchensinkvue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwQ7uDLM1PKDjiEJH3OVV1uo9zSq-eI7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

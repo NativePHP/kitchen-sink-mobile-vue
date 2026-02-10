@@ -9,9 +9,9 @@ import {
 } from '@/components/ui/card';
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
-import { MapPinIcon, Sparkles } from 'lucide-vue-next';
+import { MapPinIcon } from 'lucide-vue-next';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { geolocation, on, off, Events } from '#nativephp';
+import { On, Off, Geolocation, Events } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -20,17 +20,17 @@ const result = ref('');
 
 const checkPermissions = async () => {
     result.value = 'Checking permissions...';
-    await geolocation.checkPermissions();
+    await Geolocation.checkPermissions();
 };
 
 const requestPermission = async () => {
     result.value = 'Requesting permissions...';
-    await geolocation.requestPermissions();
+    await Geolocation.requestPermissions();
 };
 
 const getLocation = async () => {
     result.value = 'Getting location...';
-    await geolocation.getCurrentPosition(true);
+    await Geolocation.getCurrentPosition();
 };
 
 const handlePermissionStatus = (payload: any) => {
@@ -57,15 +57,15 @@ const handleLocationReceived = (payload: any) => {
 };
 
 onMounted(() => {
-    on(Events.Geolocation.PermissionStatusReceived, handlePermissionStatus);
-    on(Events.Geolocation.PermissionRequestResult, handlePermissionRequest);
-    on(Events.Geolocation.LocationReceived, handleLocationReceived);
+    On(Events.Geolocation.PermissionStatusReceived, handlePermissionStatus);
+    On(Events.Geolocation.PermissionRequestResult, handlePermissionRequest);
+    On(Events.Geolocation.LocationReceived, handleLocationReceived);
 });
 
 onUnmounted(() => {
-    off(Events.Geolocation.PermissionStatusReceived, handlePermissionStatus);
-    off(Events.Geolocation.PermissionRequestResult, handlePermissionRequest);
-    off(Events.Geolocation.LocationReceived, handleLocationReceived);
+    Off(Events.Geolocation.PermissionStatusReceived, handlePermissionStatus);
+    Off(Events.Geolocation.PermissionRequestResult, handlePermissionRequest);
+    Off(Events.Geolocation.LocationReceived, handleLocationReceived);
 });
 </script>
 

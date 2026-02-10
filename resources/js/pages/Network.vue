@@ -11,7 +11,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { ref } from 'vue';
-import { network } from '#nativephp';
+import { Network } from '#nativephp';
 import { SatelliteDishIcon, TriangleAlertIcon, SparklesIcon } from 'lucide-vue-next';
 import { getRandomQuote } from '@/data/quotes';
 
@@ -29,7 +29,7 @@ const getNetwork = async () => {
     isExpensive.value = false;
     isConstrained.value = false;
 
-    const result = await network.status();
+    const result = await Network.status();
 
     if (result.connected) {
         connected.value = true;

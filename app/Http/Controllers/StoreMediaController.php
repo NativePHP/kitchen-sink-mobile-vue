@@ -43,12 +43,13 @@ class StoreMediaController extends Controller
         }
 
         $filename = 'photos/photo_' . time() . '.jpg';
-        File::move($path, Storage::disk('public')->path($filename));
+        File::copy($path, Storage::disk('public')->path($filename));
         $url = Storage::disk('public')->url($filename);
 
         return response()->json([
             'url' => $url,
-            'path' => Storage::disk('public')->path($filename)
+            'path' => Storage::disk('public')->path($filename),
+            'originalPath' => $path
         ]);
     }
 

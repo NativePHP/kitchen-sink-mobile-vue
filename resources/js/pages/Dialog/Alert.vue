@@ -10,7 +10,7 @@ import {
 
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
-import { dialog, on, off, Events } from '#nativephp';
+import { Dialog, On, Off, Events } from '#nativephp';
 import { BellIcon } from 'lucide-vue-next';
 import { onMounted, onUnmounted, ref } from 'vue';
 import { getRandomQuote } from '@/data/quotes';
@@ -18,7 +18,7 @@ import { getRandomQuote } from '@/data/quotes';
 const randomQuote = getRandomQuote();
 
 const openAlert = async () => {
-    await dialog.alert()
+    await Dialog.alert()
         .title('Alert')
         .message('This is an alert dialog.')
         .buttons(['OK', 'Cool', 'Cancel']);
@@ -31,11 +31,11 @@ const buttonPressed = (payload: any) => {
 };
 
 onMounted(() => {
-    on(Events.Alert.ButtonPressed, buttonPressed);
+    On(Events.Alert.ButtonPressed, buttonPressed);
 });
 
 onUnmounted(() => {
-    off(Events.Alert.ButtonPressed, buttonPressed);
+    Off(Events.Alert.ButtonPressed, buttonPressed);
 });
 
 </script>

@@ -6,8 +6,13 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+    return Inertia::render('EdgePlayground');
 })->name('home');
+
+Route::get('/welcome', function () {
+    return Inertia::render('Welcome');
+})->name('welcome');
+
 
 Route::get('/camera', function () {
     return Inertia::render('Camera/GetPhoto');
@@ -68,6 +73,16 @@ Route::get('/push-notifications', function () {
 Route::get('/toast', function () {
     return Inertia::render('Dialog/Toast');
 })->name('toast');
+
+Route::get('/bluetooth', function () {
+    return Inertia::render('Bluetooth');
+})->name('bluetooth');
+
+Route::get('/ar', function () {
+    return Inertia::render('AR');
+})->name('ar');
+
+
 
 // Media API routes
 Route::post('api/camera/store-photo', [StoreMediaController::class, 'storePhoto']);

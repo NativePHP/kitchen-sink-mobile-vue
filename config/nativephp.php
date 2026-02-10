@@ -160,6 +160,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Development Server Configuration
+    |--------------------------------------------------------------------------
+    */
+    'server' => [
+        'http_port' => env('NATIVEPHP_HTTP_PORT', 3000),
+        'ws_port' => env('NATIVEPHP_WS_PORT', 8081),
+        'service_name' => env('NATIVEPHP_SERVICE_NAME', 'NativePHP Server'),
+        'open_browser' => env('NATIVEPHP_OPEN_BROWSER', true),
+        'watch_paths' => ['app', 'resources', 'routes', 'public/build'],
+        'watch_extensions' => ['php', 'blade.php', 'js', 'css', 'ts', 'vue', 'json'],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Hot Reload Configuration
     |--------------------------------------------------------------------------
     */
@@ -217,17 +231,8 @@ return [
     */
 
     'permissions' => [
-        'biometric' => true,
-        'camera' => true,
-        'microphone' => true,
-        'nfc' => true,
         'push_notifications' => true,
-        'location' => true,
         'vibrate' => true,
-        'storage_read' => false,
-        'storage_write' => false,
-        'scanner' => true,
-        'microphone_background' => true,
         'network_state' => true,
     ],
 

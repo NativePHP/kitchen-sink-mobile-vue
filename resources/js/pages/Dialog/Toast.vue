@@ -13,7 +13,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { BoltIcon } from 'lucide-vue-next';
 import { ref } from 'vue';
-import { dialog } from '#nativephp';
+import { Dialog } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -21,7 +21,7 @@ const randomQuote = getRandomQuote();
 const message = ref('');
 
 const showToast = async () => {
-    await dialog.toast(message.value);
+    await Dialog.toast(message.value);
 };
 </script>
 

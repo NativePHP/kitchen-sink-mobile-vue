@@ -25,7 +25,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://nativephp.composer.sh"
+            "url": "https://plugins.nativephp.com"
         }
     ],
     "require": {
@@ -35,10 +35,25 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "laravel/wayfinder": "^0.1.9",
-        "nativephp/mobile": ""
+        "nativephp/mobile": "*",
+        "nativephp/mobile-biometrics": "*",
+        "nativephp/mobile-browser": "*",
+        "nativephp/mobile-camera": "*",
+        "nativephp/mobile-device": "*",
+        "nativephp/mobile-dialog": "*",
+        "nativephp/mobile-file": "*",
+        "nativephp/mobile-firebase": "*",
+        "nativephp/mobile-geolocation": "^1.0",
+        "nativephp/mobile-microphone": "*",
+        "nativephp/mobile-network": "*",
+        "nativephp/mobile-scanner": "*",
+        "nativephp/mobile-secure-storage": "*",
+        "nativephp/mobile-share": "*",
+        "nativephp/mobile-system": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "fortephp/forte": "^0.1.0",
         "laravel/boost": "^1.8",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.18",
@@ -46,7 +61,8 @@
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
         "pestphp/pest": "^4.1",
-        "pestphp/pest-plugin-laravel": "^4.0"
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "textalk/websocket": "^1.6"
     },
     "autoload": {
         "psr-4": {

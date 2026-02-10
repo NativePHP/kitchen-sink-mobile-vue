@@ -17,7 +17,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { ImagePlusIcon, ImagesIcon, VideoIcon, Trash2Icon, Share2Icon } from 'lucide-vue-next';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { gallery, on, off, shareFile, Events } from '#nativephp';
+import { On, Off, ShareFile, Events, Gallery } from '#nativephp';
 import axios from 'axios';
 import { getRandomQuote } from '@/data/quotes';
 
@@ -34,19 +34,19 @@ const selectedMedia = ref<MediaFile[]>([]);
 const deletingMedia = ref<Set<number>>(new Set());
 
 const pickImages = async () => {
-    const picker = gallery();
+    const picker = Gallery();
     picker.images().multiple().maxItems(5);
     await picker;
 };
 
 const pickVideos = async () => {
-    const picker = gallery();
+    const picker = Gallery();
     picker.videos().multiple().maxItems(5);
     await picker;
 };
 
 const pickAllMedia = async () => {
-    const picker = gallery();
+    const picker = Gallery();
     picker.all().multiple().maxItems(10);
     await picker;
 };
@@ -81,7 +81,7 @@ const handleMediaSelected = async (payload: any) => {
 
 const shareMedia = async (media: MediaFile) => {
     if (media.path) {
-        await shareFile('Check this out!', 'Check this out!', media.path);
+        await ShareFile('Check this out!', 'Check this out!', media.path);
     }
 };
 
@@ -101,11 +101,11 @@ const removeMedia = async (index: number) => {
 };
 
 onMounted(() => {
-    on(Events.Gallery.MediaSelected, handleMediaSelected);
+    On(Events.Gallery.MediaSelected, handleMediaSelected);
 });
 
 onUnmounted(() => {
-    off(Events.Gallery.MediaSelected, handleMediaSelected);
+    Off(Events.Gallery.MediaSelected, handleMediaSelected);
 });
 </script>
 

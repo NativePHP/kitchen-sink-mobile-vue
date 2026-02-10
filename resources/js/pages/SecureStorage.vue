@@ -13,7 +13,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { LockKeyholeIcon, KeyIcon, Trash2Icon } from 'lucide-vue-next';
 import { ref } from 'vue';
-import { secureStorage, dialog } from '#nativephp';
+import { SecureStorage, Dialog } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -25,50 +25,50 @@ const deleteKey = ref('');
 
 const setSecureValue = async () => {
     if (!key.value || !value.value) {
-        await dialog.alert('Attention!', 'Please provide both key and value');
+        await Dialog.alert('Attention!', 'Please provide both key and value');
         return;
     }
 
     try {
-        await secureStorage.set(key.value, value.value);
-        await dialog.alert('Stored!', `Successfully stored value for key: ${key.value}`);
+        await SecureStorage.set(key.value, value.value);
+        await Dialog.alert('Stored!', `Successfully stored value for key: ${key.value}`);
         key.value = '';
         value.value = '';
     } catch (e: any) {
-        await dialog.alert('Error', `Error storing value: ${e.message}`);
+        await Dialog.alert('Error', `Error storing value: ${e.message}`);
     }
 };
 
 const getSecureValue = async () => {
     if (!retrieveKey.value) {
-        await dialog.alert('Attention!', 'Please provide a key to retrieve');
+        await Dialog.alert('Attention!', 'Please provide a key to retrieve');
         return;
     }
 
     try {
-        const result = await secureStorage.get(retrieveKey.value);
+        const result = await SecureStorage.get(retrieveKey.value);
         if (result.value) {
-            await dialog.alert('Decrypted', `Successfully retrieved value for ${retrieveKey.value}: ${result.value}`);
+            await Dialog.alert('Decrypted', `Successfully retrieved value for ${retrieveKey.value}: ${result.value}`);
         } else {
-            await dialog.alert(`Error retrieving '${retrieveKey.value}'`, 'No value found.');
+            await Dialog.alert(`Error retrieving '${retrieveKey.value}'`, 'No value found.');
         }
     } catch (e: any) {
-        await dialog.alert('Error', `Error retrieving value: ${e.message}`);
+        await Dialog.alert('Error', `Error retrieving value: ${e.message}`);
     }
 };
 
 const deleteSecureValue = async () => {
     if (!deleteKey.value) {
-        await dialog.alert('Attention!', 'Please provide a key to delete');
+        await Dialog.alert('Attention!', 'Please provide a key to delete');
         return;
     }
 
     try {
-        await secureStorage.set(deleteKey.value, null);
-        await dialog.alert('Success', `Successfully deleted value for key: ${deleteKey.value}`);
+        await SecureStorage.set(deleteKey.value, null);
+        await Dialog.alert('Success', `Successfully deleted value for key: ${deleteKey.value}`);
         deleteKey.value = '';
     } catch (e: any) {
-        await dialog.alert('Error', `Error deleting value: ${e.message}`);
+        await Dialog.alert('Error', `Error deleting value: ${e.message}`);
     }
 };
 </script>

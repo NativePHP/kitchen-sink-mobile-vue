@@ -73,6 +73,12 @@
         <native:side-nav-item active="{{ request()->routeIs('toast') }}" id="toast" icon="bolt"
                               url="{{ route('toast') }}" label="Toast" />
     </native:side-nav-group>
+{{--    <native:side-nav-item active="{{ request()->routeIs('sensors') }}" id="sensors" icon="volume-up"--}}
+{{--                          url="{{ route('sensors') }}" label="Sensors" badge="New!" badge-color="blue" />--}}
+{{--    <native:side-nav-item active="{{ request()->routeIs('object-detection') }}" id="objects" icon="video"--}}
+{{--                          url="{{ route('object-detection') }}" label="Object Detection" badge="New!" badge-color="blue" />--}}
+{{--    <native:side-nav-item active="{{ request()->routeIs('face-detection') }}" id="face" icon="familiar_face_and_zone_24"--}}
+{{--                          url="{{ route('face-detection') }}" label="Face Detection" badge="New!" badge-color="blue" />--}}
     <native:side-nav-item active="{{ request()->routeIs('scanner') }}" id="scanner" icon="qrcode"
                           url="{{ route('scanner') }}" label="Scanner" badge="New!" badge-color="blue" />
     <native:side-nav-item active="{{ request()->routeIs('network') }}" id="network" icon="globe"
@@ -89,8 +95,8 @@
                           url="{{ route('browser') }}" label="Browser" />
     <native:side-nav-item active="{{ request()->routeIs('secure-storage') }}" id="secure-storage" icon="folder-lock"
                           url="{{ route('secure-storage') }}" label="Secure Storage" />
-    <native:side-nav-item active="{{ request()->routeIs('push-notifications') }}" id="push-notifications" icon="bell"
-                          url="{{ route('push-notifications') }}" label="Push Notifications" />
+{{--    <native:side-nav-item active="{{ request()->routeIs('push-notifications') }}" id="push-notifications" icon="bell"--}}
+{{--                          url="{{ route('push-notifications') }}" label="Push Notifications" />--}}
     <native:horizontal-divider />
     <native:side-nav-group heading="Resources" :expanded="false">
         <native:side-nav-item id="docs" icon="book-open"

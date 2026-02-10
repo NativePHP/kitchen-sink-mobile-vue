@@ -13,7 +13,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import axios from 'axios';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { camera, Events, on, off } from '#nativephp';
+import { On, Off, Dialog, Camera, Events} from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -21,20 +21,24 @@ const randomQuote = getRandomQuote();
 const photoDataUrl = ref('');
 
 // Take a photo from camera
-const takePhoto = async () => await camera.getPhoto()
+const takePhoto = async () => await Camera.getPhoto()
 
 const handlePhotoTaken = (payload: any) => {
     axios.post(storePhoto.url(), { payload }).then((response) => {
         photoDataUrl.value = response.data.url;
     });
 };
+const handlePhotoCanceled = (payload: any) => {
+  Dialog.toast('Photo canceled')
+};
 
 onMounted(() => {
-    on(Events.Camera.PhotoTaken, handlePhotoTaken);
+    On(Events.Camera.PhotoTaken, handlePhotoTaken);
+    On(Events.Camera.PhotoCancelled, handlePhotoCanceled);
 });
 
 onUnmounted(() => {
-    off(Events.Camera.PhotoTaken, handlePhotoTaken);
+    Off(Events.Camera.PhotoTaken, handlePhotoTaken);
 });
 </script>
 

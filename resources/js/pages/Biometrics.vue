@@ -12,7 +12,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { FingerprintIcon, CheckCircle2Icon, AlertTriangleIcon } from 'lucide-vue-next';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { biometric, on, off, Events } from '#nativephp';
+import { On, Off, Biometric, Events } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -20,7 +20,7 @@ const randomQuote = getRandomQuote();
 const secure = ref(false);
 
 const promptForBiometricID = async () => {
-    await biometric.prompt();
+    await Biometric.prompt();
 };
 
 const handleBiometricAuth = (payload: any) => {
@@ -29,11 +29,11 @@ const handleBiometricAuth = (payload: any) => {
 };
 
 onMounted(() => {
-    on(Events.Biometric.Completed, handleBiometricAuth);
+    On(Events.Biometrics.Completed, handleBiometricAuth);
 });
 
 onUnmounted(() => {
-    off(Events.Biometric.Completed, handleBiometricAuth);
+    Off(Events.Biometrics.Completed, handleBiometricAuth);
 });
 </script>
 

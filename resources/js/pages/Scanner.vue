@@ -8,8 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { scanner, on, off, Events } from '#nativephp'
-import { QrCodeIcon, XIcon, Sparkles } from 'lucide-vue-next';
+import { On, Off, Scanner, Events } from '#nativephp'
+import { QrCodeIcon, XIcon } from 'lucide-vue-next';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -37,7 +37,7 @@ const formatOptions = [
 ];
 
 const scanCode = async () =>  {
-    await scanner
+    await Scanner
         .scan()
         .prompt(streaming.value ? 'Scan codes continuously' : 'Scan a code')
         .formats([requestedFormat.value])
@@ -65,11 +65,11 @@ const clearScans = () => {
 };
 
 onMounted(() => {
-    on(Events.Scanner.CodeScanned, handleCodeScanned)
+    On(Events.Scanner.CodeScanned, handleCodeScanned)
 });
 
 onUnmounted(() => {
-    off(Events.Scanner.CodeScanned, handleCodeScanned)
+    Off(Events.Scanner.CodeScanned, handleCodeScanned)
 });
 </script>
 

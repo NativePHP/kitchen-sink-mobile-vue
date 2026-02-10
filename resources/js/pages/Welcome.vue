@@ -11,7 +11,8 @@ import {
     Fingerprint,
     MapPin,
     Smartphone,
-    Lightbulb
+    Lightbulb,
+    Box
 } from 'lucide-vue-next';
 import Quote from '@/components/Quote.vue';
 import { getRandomQuote } from '@/data/quotes';
@@ -67,6 +68,12 @@ const featuredDemos = [
         href: '/device',
         gradient: 'from-slate-500 to-gray-500',
     },
+    {
+        title: 'AR',
+        icon: Box,
+        href: '/ar',
+        gradient: 'from-violet-500 to-purple-600',
+    },
 ];
 </script>
 
@@ -76,14 +83,14 @@ const featuredDemos = [
         <div class="space-y-4 bg-white min-h-screen">
             <!-- Hero Card -->
             <div
-                class="bg-gradient-to-br from-teal-500 to-purple-600 text-white  pt-[var(--inset-top)]"
+                class="bg-gradient-to-br from-blue-900  to-purple-600 text-white  pt-[var(--inset-top)]"
             >
                 <CardHeader class="space-y-3 px-4">
                     <div class="flex items-start gap-4">
                         <div class="space-y-3">
                             <CardTitle class="text-white text-3xl pt-2 flex items-center font-black">
                                 <p>NativePHP v2</p>
-                                <svg class="size-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.48 208.27"><title>Vue.js logo</title><path d="M539.77,407.87,512,456l-27.77-48.1H391.76L512,616.13,632.24,407.87Z" transform="translate(-391.76 -407.87)" style="fill:#41b883"/><path d="M539.77,407.87,512,456l-27.77-48.1H439.86l72.14,125,72.14-125Z" transform="translate(-391.76 -407.87)" style="fill:#34495e"/></svg>
+                                <svg class="size-6 ml-2 animate-bounce" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.48 208.27"><title>Vue.js logo</title><path d="M539.77,407.87,512,456l-27.77-48.1H391.76L512,616.13,632.24,407.87Z" transform="translate(-391.76 -407.87)" style="fill:#41b883"/><path d="M539.77,407.87,512,456l-27.77-48.1H439.86l72.14,125,72.14-125Z" transform="translate(-391.76 -407.87)" style="fill:#34495e"/></svg>
                             </CardTitle>
                             <CardDescription class="text-lg text-white">
                                 Explore the full power of native mobile capabilities built with Vue and Inertia.

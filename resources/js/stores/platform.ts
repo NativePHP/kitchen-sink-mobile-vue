@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue';
-import { system, device } from '#nativephp'
+import { System, Device } from '#nativephp'
 
 const STORAGE_KEY = 'nativephp_platform_info';
 
@@ -28,10 +28,10 @@ export async function initializePlatform() {
 
     initPromise = (async () => {
         try {
-            _isIos.value = await system.isIos();
-            isAndroid.value = await system.isAndroid();
+            _isIos.value = await System.isIos();
+            isAndroid.value = await System.isAndroid();
 
-            const deviceInfo = await device.getInfo();
+            const deviceInfo = await Device.getInfo();
             if (deviceInfo && deviceInfo.info) {
                 const info = JSON.parse(deviceInfo.info);
 

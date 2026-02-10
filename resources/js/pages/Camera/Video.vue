@@ -23,7 +23,7 @@ import {
     VideoIcon,
 } from 'lucide-vue-next';
 import { computed, onMounted, onUnmounted, ref } from 'vue';
-import { camera, off, on, shareFile, Events } from '#nativephp';
+import { Off, On, ShareFile, Camera, Events } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
@@ -57,7 +57,7 @@ const fetchVideos = async () => {
 
 // Record video
 const recordVideo = async () => {
-    const recorder = camera.recordVideo();
+    const recorder = Camera.recordVideo();
 
     if (maxDuration.value) {
         recorder.maxDuration(maxDuration.value);
@@ -94,7 +94,7 @@ const closePlayer = () => {
 // Share video
 const shareVideo = async (video: Video) => {
     if (video.path) {
-        await shareFile(
+        await ShareFile(
             'Check this out!',
             'Check this out!',
             video.path
@@ -140,14 +140,14 @@ const currentlyPlayingVideo = computed(() => {
 });
 
 onMounted(async () => {
-    on(Events.Camera.VideoRecorded, handleVideoRecorded);
-    on(Events.Camera.VideoCancelled, handleVideoCancelled);
+    On(Events.Camera.VideoRecorded, handleVideoRecorded);
+    On(Events.Camera.VideoCancelled, handleVideoCancelled);
     await fetchVideos();
 });
 
 onUnmounted(() => {
-    off(Events.Camera.VideoRecorded, handleVideoRecorded);
-    off(Events.Camera.VideoCancelled, handleVideoCancelled);
+    Off(Events.Camera.VideoRecorded, handleVideoRecorded);
+    Off(Events.Camera.VideoCancelled, handleVideoCancelled);
 });
 </script>
 

@@ -9,13 +9,13 @@ import {
 import AppLayout from '@/layouts/AppLayout.vue';
 import Quote from '@/components/Quote.vue';
 import { SmartphoneIcon, Sparkles } from 'lucide-vue-next';
-import { device } from '#nativephp';
+import { Device } from '#nativephp';
 import { getRandomQuote } from '@/data/quotes';
 
 const randomQuote = getRandomQuote();
 
 const vibrate = async () => {
-    await device.vibrate();
+    await Device.vibrate();
 };
 </script>
 
