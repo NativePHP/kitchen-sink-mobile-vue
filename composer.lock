@@ -2600,16 +2600,16 @@
         },
         {
             "name": "nativephp/mobile",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-air.git",
-                "reference": "01b59e7901ae9e3b5e04ff36c92a96092d233aad"
+                "reference": "33fa3ec614d461b4f053b92a9f81757fb057f947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/01b59e7901ae9e3b5e04ff36c92a96092d233aad",
-                "reference": "01b59e7901ae9e3b5e04ff36c92a96092d233aad",
+                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/33fa3ec614d461b4f053b92a9f81757fb057f947",
+                "reference": "33fa3ec614d461b4f053b92a9f81757fb057f947",
                 "shasum": ""
             },
             "require": {
@@ -2679,9 +2679,9 @@
             ],
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-air/issues",
-                "source": "https://github.com/NativePHP/mobile-air/tree/3.0.0"
+                "source": "https://github.com/NativePHP/mobile-air/tree/3.0.1"
             },
-            "time": "2026-01-31T05:23:25+00:00"
+            "time": "2026-02-11T13:36:55+00:00"
         },
         {
             "name": "nativephp/mobile-biometrics",
@@ -2690,7 +2690,7 @@
                 "type": "zip",
                 "url": "https://plugins.nativephp.com/dist/nativephp/mobile-biometrics/nativephp-mobile-biometrics-57ef3df4f8924a6d1cf214b1609fc70eecfe492c-zip-ccb8a8.zip",
                 "reference": "57ef3df4f8924a6d1cf214b1609fc70eecfe492c",
-                "shasum": "037bf5a0c3b0c577e08f8e1b5500a2be98439220"
+                "shasum": "b24f31d65f6d23a2f652fa10940b0b797b3e84e7"
             },
             "require": {
                 "nativephp/mobile": "*",
@@ -2980,7 +2980,7 @@
                 "type": "zip",
                 "url": "https://plugins.nativephp.com/dist/nativephp/mobile-firebase/nativephp-mobile-firebase-21420d8e6de8fecb18999f44c693d837fa635222-zip-cbd5e9.zip",
                 "reference": "21420d8e6de8fecb18999f44c693d837fa635222",
-                "shasum": "33012ffbaa807470d6f37dac3995ec3d7c859694"
+                "shasum": "4be36214defc497b541c89279a48d5a3e89fb282"
             },
             "require": {
                 "nativephp/mobile": "^3.0",
@@ -3021,7 +3021,7 @@
                 "type": "zip",
                 "url": "https://plugins.nativephp.com/dist/nativephp/mobile-geolocation/nativephp-mobile-geolocation-4ef5624c7af9139a67339d1b01c3bc1df2cbf9f5-zip-9ee207.zip",
                 "reference": "4ef5624c7af9139a67339d1b01c3bc1df2cbf9f5",
-                "shasum": "6a861ac64ed5469640a801398faa237684b5e1f8"
+                "shasum": "9e267db3b97bb70e9eb279eb3118e630c8727399"
             },
             "require": {
                 "nativephp/mobile": "*",
@@ -3159,12 +3159,12 @@
         },
         {
             "name": "nativephp/mobile-scanner",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-scanner/nativephp-mobile-scanner-9bf45469471862de52bea67e59da15d51f59164a-zip-d5ac65.zip",
-                "reference": "9bf45469471862de52bea67e59da15d51f59164a",
-                "shasum": "492116a25eb8eb21aa58ca7106a8d8893dfc6b9e"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-scanner/nativephp-mobile-scanner-705b7d7d2b6706e1a17850010e633bfcb365fbf5-zip-e37d01.zip",
+                "reference": "705b7d7d2b6706e1a17850010e633bfcb365fbf5",
+                "shasum": "13a72fc71daa4975c44fe55d210cf9682e88e921"
             },
             "require": {
                 "nativephp/mobile": "*",
@@ -3196,7 +3196,7 @@
                 }
             ],
             "description": "QR code and barcode scanner plugin for NativePHP Mobile - supports multiple barcode formats with continuous scanning",
-            "time": "2026-01-19T23:54:57+00:00"
+            "time": "2026-02-11T12:54:55+00:00"
         },
         {
             "name": "nativephp/mobile-secure-storage",
@@ -3205,7 +3205,7 @@
                 "type": "zip",
                 "url": "https://plugins.nativephp.com/dist/nativephp/mobile-secure-storage/nativephp-mobile-secure-storage-0a19ca89dddabc0c9b0d4c07d5bd27fe0d8a72b2-zip-ce8125.zip",
                 "reference": "0a19ca89dddabc0c9b0d4c07d5bd27fe0d8a72b2",
-                "shasum": "2c687a9e0a4a87bbb59e8465ea2b73d124e86503"
+                "shasum": "241f50d393bd26c46c819aea1b0cd07b0d06a4f2"
             },
             "require": {
                 "nativephp/mobile": "*",
