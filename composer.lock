@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31327da55a06b6d51cb7c8627c95088c",
+    "content-hash": "d640c5a2cfa94a32a0909b46b02a7b30",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2545,16 +2545,16 @@
         },
         {
             "name": "nativephp/mobile",
-            "version": "3.1.0",
+            "version": "dev-move-php-version-to-config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-air.git",
-                "reference": "588dd8b3c179eda32de6523c148b19fbaf20387f"
+                "reference": "c5586c1d61265a1ec7f8cb0819edb601c2d14ffb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/588dd8b3c179eda32de6523c148b19fbaf20387f",
-                "reference": "588dd8b3c179eda32de6523c148b19fbaf20387f",
+                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/c5586c1d61265a1ec7f8cb0819edb601c2d14ffb",
+                "reference": "c5586c1d61265a1ec7f8cb0819edb601c2d14ffb",
                 "shasum": ""
             },
             "require": {
@@ -2622,21 +2622,21 @@
             ],
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-air/issues",
-                "source": "https://github.com/NativePHP/mobile-air/tree/3.1.0"
+                "source": "https://github.com/NativePHP/mobile-air/tree/move-php-version-to-config"
             },
-            "time": "2026-03-20T14:12:07+00:00"
+            "time": "2026-03-21T23:06:57+00:00"
         },
         {
             "name": "nativephp/mobile-biometrics",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-biometrics/nativephp-mobile-biometrics-64b6ded4a38e3466984aef45778ed81bf52fbada-zip-7a04f6.zip",
-                "reference": "64b6ded4a38e3466984aef45778ed81bf52fbada",
-                "shasum": "d3a94041df785ca8a2c6882fb19de7ddc40f0d5c"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-biometrics/nativephp-mobile-biometrics-2814b5c0a73075cc1d46ecb5bd04ccc275484431-zip-9c606a.zip",
+                "reference": "2814b5c0a73075cc1d46ecb5bd04ccc275484431",
+                "shasum": "11da0ce9e6daf652c86e5a7b5a1ad3a90c029ec6"
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2668,24 +2668,24 @@
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-biometrics/issues"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-02-18T00:21:48+00:00"
         },
         {
             "name": "nativephp/mobile-browser",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-browser.git",
-                "reference": "68c8ef302632d2ce1018aa86166fabd22962c6a3"
+                "reference": "1ba7d38e877137f8c458d5711e5abe0f73ad58a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-browser/zipball/68c8ef302632d2ce1018aa86166fabd22962c6a3",
-                "reference": "68c8ef302632d2ce1018aa86166fabd22962c6a3",
+                "url": "https://api.github.com/repos/NativePHP/mobile-browser/zipball/1ba7d38e877137f8c458d5711e5abe0f73ad58a3",
+                "reference": "1ba7d38e877137f8c458d5711e5abe0f73ad58a3",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2717,9 +2717,9 @@
             "description": "Browser functionality for NativePHP Mobile - open URLs in system browser, in-app browser, and OAuth authentication",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-browser/issues",
-                "source": "https://github.com/NativePHP/mobile-browser/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-browser/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:53:04+00:00"
         },
         {
             "name": "nativephp/mobile-camera",
@@ -2774,20 +2774,20 @@
         },
         {
             "name": "nativephp/mobile-device",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-device.git",
-                "reference": "abd880cea32a969770059653ebb6e2c530cfd08d"
+                "reference": "91f569fdc903961f06776e865b856369660de4c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-device/zipball/abd880cea32a969770059653ebb6e2c530cfd08d",
-                "reference": "abd880cea32a969770059653ebb6e2c530cfd08d",
+                "url": "https://api.github.com/repos/NativePHP/mobile-device/zipball/91f569fdc903961f06776e865b856369660de4c6",
+                "reference": "91f569fdc903961f06776e865b856369660de4c6",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2813,26 +2813,26 @@
             "description": "Device hardware operations for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-device/issues",
-                "source": "https://github.com/NativePHP/mobile-device/tree/1.0.2"
+                "source": "https://github.com/NativePHP/mobile-device/tree/1.0.1"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-03-12T22:12:09+00:00"
         },
         {
             "name": "nativephp/mobile-dialog",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-dialog.git",
-                "reference": "fd0ca0d79a2f2396929f6146fef7a55c761b3dd0"
+                "reference": "ce1958fff0c32a500688b9bc4ca9c426b5bd2c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-dialog/zipball/fd0ca0d79a2f2396929f6146fef7a55c761b3dd0",
-                "reference": "fd0ca0d79a2f2396929f6146fef7a55c761b3dd0",
+                "url": "https://api.github.com/repos/NativePHP/mobile-dialog/zipball/ce1958fff0c32a500688b9bc4ca9c426b5bd2c4f",
+                "reference": "ce1958fff0c32a500688b9bc4ca9c426b5bd2c4f",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2864,26 +2864,26 @@
             "description": "Native alert dialogs and toast notifications for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-dialog/issues",
-                "source": "https://github.com/NativePHP/mobile-dialog/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-dialog/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:53:05+00:00"
         },
         {
             "name": "nativephp/mobile-file",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-file.git",
-                "reference": "a265884b3f639c1b62312f13674f3c0efd753761"
+                "reference": "c96d794c88f2def2462285f171c8d0ee6ddb3607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-file/zipball/a265884b3f639c1b62312f13674f3c0efd753761",
-                "reference": "a265884b3f639c1b62312f13674f3c0efd753761",
+                "url": "https://api.github.com/repos/NativePHP/mobile-file/zipball/c96d794c88f2def2462285f171c8d0ee6ddb3607",
+                "reference": "c96d794c88f2def2462285f171c8d0ee6ddb3607",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2915,21 +2915,21 @@
             "description": "File operations plugin for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-file/issues",
-                "source": "https://github.com/NativePHP/mobile-file/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-file/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:53:06+00:00"
         },
         {
             "name": "nativephp/mobile-firebase",
-            "version": "1.0.6",
+            "version": "1.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-firebase/nativephp-mobile-firebase-f1e4dbb4e93dbd0a80dbb5629af3c86ef7c14a92-zip-25b73b.zip",
-                "reference": "f1e4dbb4e93dbd0a80dbb5629af3c86ef7c14a92",
-                "shasum": "1c93f4f072dc3d51a3eb63e65acf42335a9ef543"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-firebase/nativephp-mobile-firebase-ccf2ea334d78bddf52f7f5a7523607dbb899f236-zip-f42a6f.zip",
+                "reference": "ccf2ea334d78bddf52f7f5a7523607dbb899f236",
+                "shasum": "0fc258d04edd26fad931589c8a94126b46175012"
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -2961,19 +2961,19 @@
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-firebase/issues"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:52:47+00:00"
         },
         {
             "name": "nativephp/mobile-geolocation",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-geolocation/nativephp-mobile-geolocation-77ba8089cef164d7a850d14c86f4ecbe7296125a-zip-848581.zip",
-                "reference": "77ba8089cef164d7a850d14c86f4ecbe7296125a",
-                "shasum": "78e72e973a89dd36ea3678ca5da75c99baa3dddc"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-geolocation/nativephp-mobile-geolocation-4ef5624c7af9139a67339d1b01c3bc1df2cbf9f5-zip-9ee207.zip",
+                "reference": "4ef5624c7af9139a67339d1b01c3bc1df2cbf9f5",
+                "shasum": "a57e1f1c737cd39a5a08fc0b65fcd8f12135b2bd"
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3005,24 +3005,24 @@
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-geolocation/issues"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:52:56+00:00"
         },
         {
             "name": "nativephp/mobile-microphone",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-microphone.git",
-                "reference": "a484ac5fefd89e021ce15ebc2987b6255849f6a6"
+                "reference": "43c734c5c316f5a703fef95ce675eba8ea69566b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-microphone/zipball/a484ac5fefd89e021ce15ebc2987b6255849f6a6",
-                "reference": "a484ac5fefd89e021ce15ebc2987b6255849f6a6",
+                "url": "https://api.github.com/repos/NativePHP/mobile-microphone/zipball/43c734c5c316f5a703fef95ce675eba8ea69566b",
+                "reference": "43c734c5c316f5a703fef95ce675eba8ea69566b",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3054,26 +3054,26 @@
             "description": "Microphone recording plugin for NativePHP Mobile - audio recording with pause/resume support",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-microphone/issues",
-                "source": "https://github.com/NativePHP/mobile-microphone/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-microphone/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:54:56+00:00"
         },
         {
             "name": "nativephp/mobile-network",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-network.git",
-                "reference": "3a544d6e177c52cd5e2a1bf2becb18ff2c9e8c5c"
+                "reference": "3c4360d7dd80f378c746b83cbd80573fa64e59a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-network/zipball/3a544d6e177c52cd5e2a1bf2becb18ff2c9e8c5c",
-                "reference": "3a544d6e177c52cd5e2a1bf2becb18ff2c9e8c5c",
+                "url": "https://api.github.com/repos/NativePHP/mobile-network/zipball/3c4360d7dd80f378c746b83cbd80573fa64e59a6",
+                "reference": "3c4360d7dd80f378c746b83cbd80573fa64e59a6",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3105,21 +3105,21 @@
             "description": "Network connectivity status plugin for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-network/issues",
-                "source": "https://github.com/NativePHP/mobile-network/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-network/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:53:07+00:00"
         },
         {
             "name": "nativephp/mobile-scanner",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-scanner/nativephp-mobile-scanner-b819d8eb9521f9f7ad3b067c2171015894c310a5-zip-505868.zip",
-                "reference": "b819d8eb9521f9f7ad3b067c2171015894c310a5",
-                "shasum": "a6ccca07daca2e3507a8fa7a4ebbb1f225e69e68"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-scanner/nativephp-mobile-scanner-705b7d7d2b6706e1a17850010e633bfcb365fbf5-zip-e37d01.zip",
+                "reference": "705b7d7d2b6706e1a17850010e633bfcb365fbf5",
+                "shasum": "2d2817eb499f33e7edfbee60503868560825516d"
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3151,19 +3151,19 @@
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-scanner/issues"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-02-11T12:54:55+00:00"
         },
         {
             "name": "nativephp/mobile-secure-storage",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-secure-storage/nativephp-mobile-secure-storage-5b87aae690dfe7f216afba4ceedd383233ac1892-zip-30ac0b.zip",
-                "reference": "5b87aae690dfe7f216afba4ceedd383233ac1892",
-                "shasum": "996db6d8be4c8de9ce336624aa8c86de2a24fc5a"
+                "url": "https://plugins.nativephp.com/dist/nativephp/mobile-secure-storage/nativephp-mobile-secure-storage-0a19ca89dddabc0c9b0d4c07d5bd27fe0d8a72b2-zip-ce8125.zip",
+                "reference": "0a19ca89dddabc0c9b0d4c07d5bd27fe0d8a72b2",
+                "shasum": "14dea1e7c477dfc1c59fff67ca664f197e3a63b6"
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3195,24 +3195,24 @@
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-secure-storage/issues"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:52:49+00:00"
         },
         {
             "name": "nativephp/mobile-share",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-share.git",
-                "reference": "e9a39534314356eb9d5e221df8dd8a5fc987ccc4"
+                "reference": "7d7c2e3cfb0d217953c2a76362842aeb56f45211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-share/zipball/e9a39534314356eb9d5e221df8dd8a5fc987ccc4",
-                "reference": "e9a39534314356eb9d5e221df8dd8a5fc987ccc4",
+                "url": "https://api.github.com/repos/NativePHP/mobile-share/zipball/7d7c2e3cfb0d217953c2a76362842aeb56f45211",
+                "reference": "7d7c2e3cfb0d217953c2a76362842aeb56f45211",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "php": "^8.2"
             },
             "type": "nativephp-plugin",
@@ -3244,26 +3244,26 @@
             "description": "Native share sheet plugin for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-share/issues",
-                "source": "https://github.com/NativePHP/mobile-share/tree/1.0.1"
+                "source": "https://github.com/NativePHP/mobile-share/tree/1.0.0"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-01-19T23:53:08+00:00"
         },
         {
             "name": "nativephp/mobile-system",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-system.git",
-                "reference": "dc861c1ad54985aca536c5ad8a2fe3044c4e9c28"
+                "reference": "e47c8a022591124ecef4cf9a2b04dc978c635641"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-system/zipball/dc861c1ad54985aca536c5ad8a2fe3044c4e9c28",
-                "reference": "dc861c1ad54985aca536c5ad8a2fe3044c4e9c28",
+                "url": "https://api.github.com/repos/NativePHP/mobile-system/zipball/e47c8a022591124ecef4cf9a2b04dc978c635641",
+                "reference": "e47c8a022591124ecef4cf9a2b04dc978c635641",
                 "shasum": ""
             },
             "require": {
-                "nativephp/mobile": "^3.0",
+                "nativephp/mobile": "*",
                 "nativephp/mobile-device": "*",
                 "php": "^8.2"
             },
@@ -3290,9 +3290,9 @@
             "description": "System-level operations for NativePHP Mobile",
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-system/issues",
-                "source": "https://github.com/NativePHP/mobile-system/tree/1.0.2"
+                "source": "https://github.com/NativePHP/mobile-system/tree/1.0.1"
             },
-            "time": "2026-03-20T22:08:33+00:00"
+            "time": "2026-03-12T22:11:47+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5071,22 +5071,21 @@
         },
         {
             "name": "symfony/clock",
-            "version": "v7.4.0",
+            "version": "v8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/clock.git",
-                "reference": "9169f24776edde469914c1e7a1442a50f7a4e110"
+                "reference": "832119f9b8dbc6c8e6f65f30c5969eca1e88764f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/clock/zipball/9169f24776edde469914c1e7a1442a50f7a4e110",
-                "reference": "9169f24776edde469914c1e7a1442a50f7a4e110",
+                "url": "https://api.github.com/repos/symfony/clock/zipball/832119f9b8dbc6c8e6f65f30c5969eca1e88764f",
+                "reference": "832119f9b8dbc6c8e6f65f30c5969eca1e88764f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "psr/clock": "^1.0",
-                "symfony/polyfill-php83": "^1.28"
+                "php": ">=8.4",
+                "psr/clock": "^1.0"
             },
             "provide": {
                 "psr/clock-implementation": "1.0"
@@ -5125,7 +5124,7 @@
                 "time"
             ],
             "support": {
-                "source": "https://github.com/symfony/clock/tree/v7.4.0"
+                "source": "https://github.com/symfony/clock/tree/v8.0.0"
             },
             "funding": [
                 {
@@ -5145,7 +5144,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-11-12T15:39:26+00:00"
+            "time": "2025-11-12T15:46:48+00:00"
         },
         {
             "name": "symfony/console",
@@ -5247,20 +5246,20 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v7.4.6",
+            "version": "v8.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "2e7c52c647b406e2107dd867db424a4dbac91864"
+                "reference": "2a178bf80f05dbbe469a337730eba79d61315262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/2e7c52c647b406e2107dd867db424a4dbac91864",
-                "reference": "2e7c52c647b406e2107dd867db424a4dbac91864",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/2a178bf80f05dbbe469a337730eba79d61315262",
+                "reference": "2a178bf80f05dbbe469a337730eba79d61315262",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.4"
             },
             "type": "library",
             "autoload": {
@@ -5292,7 +5291,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v7.4.6"
+                "source": "https://github.com/symfony/css-selector/tree/v8.0.6"
             },
             "funding": [
                 {
@@ -5312,7 +5311,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-17T07:53:42+00:00"
+            "time": "2026-02-17T13:07:04+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -5465,24 +5464,24 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v7.4.4",
+            "version": "v8.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "dc2c0eba1af673e736bb851d747d266108aea746"
+                "reference": "99301401da182b6cfaa4700dbe9987bb75474b47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/dc2c0eba1af673e736bb851d747d266108aea746",
-                "reference": "dc2c0eba1af673e736bb851d747d266108aea746",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/99301401da182b6cfaa4700dbe9987bb75474b47",
+                "reference": "99301401da182b6cfaa4700dbe9987bb75474b47",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
+                "php": ">=8.4",
                 "symfony/event-dispatcher-contracts": "^2.5|^3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<6.4",
+                "symfony/security-http": "<7.4",
                 "symfony/service-contracts": "<2.5"
             },
             "provide": {
@@ -5491,14 +5490,14 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^6.4|^7.0|^8.0",
-                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
-                "symfony/error-handler": "^6.4|^7.0|^8.0",
-                "symfony/expression-language": "^6.4|^7.0|^8.0",
-                "symfony/framework-bundle": "^6.4|^7.0|^8.0",
-                "symfony/http-foundation": "^6.4|^7.0|^8.0",
+                "symfony/config": "^7.4|^8.0",
+                "symfony/dependency-injection": "^7.4|^8.0",
+                "symfony/error-handler": "^7.4|^8.0",
+                "symfony/expression-language": "^7.4|^8.0",
+                "symfony/framework-bundle": "^7.4|^8.0",
+                "symfony/http-foundation": "^7.4|^8.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/stopwatch": "^6.4|^7.0|^8.0"
+                "symfony/stopwatch": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -5526,7 +5525,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v7.4.4"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v8.0.4"
             },
             "funding": [
                 {
@@ -5546,7 +5545,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-05T11:45:34+00:00"
+            "time": "2026-01-05T11:45:55+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -7134,35 +7133,34 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.4.6",
+            "version": "v8.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "9f209231affa85aa930a5e46e6eb03381424b30b"
+                "reference": "6c9e1108041b5dce21a9a4984b531c4923aa9ec4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/9f209231affa85aa930a5e46e6eb03381424b30b",
-                "reference": "9f209231affa85aa930a5e46e6eb03381424b30b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/6c9e1108041b5dce21a9a4984b531c4923aa9ec4",
+                "reference": "6c9e1108041b5dce21a9a4984b531c4923aa9ec4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3.0",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-intl-grapheme": "~1.33",
-                "symfony/polyfill-intl-normalizer": "~1.0",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=8.4",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-intl-grapheme": "^1.33",
+                "symfony/polyfill-intl-normalizer": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "conflict": {
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/emoji": "^7.1|^8.0",
-                "symfony/http-client": "^6.4|^7.0|^8.0",
-                "symfony/intl": "^6.4|^7.0|^8.0",
+                "symfony/emoji": "^7.4|^8.0",
+                "symfony/http-client": "^7.4|^8.0",
+                "symfony/intl": "^7.4|^8.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^6.4|^7.0|^8.0"
+                "symfony/var-exporter": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -7201,7 +7199,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.4.6"
+                "source": "https://github.com/symfony/string/tree/v8.0.6"
             },
             "funding": [
                 {
@@ -7221,38 +7219,31 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-09T09:33:46+00:00"
+            "time": "2026-02-09T10:14:57+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v7.4.6",
+            "version": "v8.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "1888cf064399868af3784b9e043240f1d89d25ce"
+                "reference": "13ff19bcf2bea492d3c2fbeaa194dd6f4599ce1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/1888cf064399868af3784b9e043240f1d89d25ce",
-                "reference": "1888cf064399868af3784b9e043240f1d89d25ce",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/13ff19bcf2bea492d3c2fbeaa194dd6f4599ce1b",
+                "reference": "13ff19bcf2bea492d3c2fbeaa194dd6f4599ce1b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/translation-contracts": "^2.5.3|^3.3"
+                "php": ">=8.4",
+                "symfony/polyfill-mbstring": "^1.0",
+                "symfony/translation-contracts": "^3.6.1"
             },
             "conflict": {
                 "nikic/php-parser": "<5.0",
-                "symfony/config": "<6.4",
-                "symfony/console": "<6.4",
-                "symfony/dependency-injection": "<6.4",
                 "symfony/http-client-contracts": "<2.5",
-                "symfony/http-kernel": "<6.4",
-                "symfony/service-contracts": "<2.5",
-                "symfony/twig-bundle": "<6.4",
-                "symfony/yaml": "<6.4"
+                "symfony/service-contracts": "<2.5"
             },
             "provide": {
                 "symfony/translation-implementation": "2.3|3.0"
@@ -7260,17 +7251,17 @@
             "require-dev": {
                 "nikic/php-parser": "^5.0",
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^6.4|^7.0|^8.0",
-                "symfony/console": "^6.4|^7.0|^8.0",
-                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
-                "symfony/finder": "^6.4|^7.0|^8.0",
+                "symfony/config": "^7.4|^8.0",
+                "symfony/console": "^7.4|^8.0",
+                "symfony/dependency-injection": "^7.4|^8.0",
+                "symfony/finder": "^7.4|^8.0",
                 "symfony/http-client-contracts": "^2.5|^3.0",
-                "symfony/http-kernel": "^6.4|^7.0|^8.0",
-                "symfony/intl": "^6.4|^7.0|^8.0",
+                "symfony/http-kernel": "^7.4|^8.0",
+                "symfony/intl": "^7.4|^8.0",
                 "symfony/polyfill-intl-icu": "^1.21",
-                "symfony/routing": "^6.4|^7.0|^8.0",
+                "symfony/routing": "^7.4|^8.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/yaml": "^6.4|^7.0|^8.0"
+                "symfony/yaml": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -7301,7 +7292,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v7.4.6"
+                "source": "https://github.com/symfony/translation/tree/v8.0.6"
             },
             "funding": [
                 {
@@ -7321,7 +7312,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-17T07:53:42+00:00"
+            "time": "2026-02-17T13:07:04+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -11576,11 +11567,13 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "nativephp/mobile": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.3"
+        "php": "^8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.9.0"
